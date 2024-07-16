@@ -44,3 +44,11 @@ window.addEventListener('scroll', function() {
     const progressBar = document.getElementById('progress-bar');
     progressBar.style.width = scrollPercentage + '%';
 });
+
+document.querySelectorAll('img').forEach(image => { image.onclick =() =>{
+    document.querySelector('.popMain').style.display = 'block';
+    document.querySelector('.popMain img').src = image.getAttribute('src');
+}    });
+document.querySelector('.popMain span').onclick = () => {
+    document.querySelector('.popMain').style.display = 'none';   
+};

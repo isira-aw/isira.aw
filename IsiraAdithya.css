@@ -3,7 +3,7 @@ body{
     font-family: monospace;
     color: aqua;
 }
-
+.navBar_2,
 .navBar{
     display: flex;
     flex-direction: row;
@@ -18,6 +18,7 @@ body{
     backdrop-filter: blur(5px);
     justify-content:flex-end;
   }
+  .navBar_2 a,
   .navBar a{
     margin-right: 10px;
     text-decoration: none;
@@ -28,6 +29,9 @@ body{
     padding: 15px;
     border-radius: 10px;
     transition: 1s ;
+  }
+  .navBar_2{
+    display: none;
   }
   .navBar a:hover {
     background-color: rgb(0, 0, 0);
@@ -45,7 +49,7 @@ body{
     z-index: -1;
   }
   section.vid{
-    height: 4000px;
+   height: 3500px; /*  //////////// If u NEED TO CHANGE TO up */
   }
   section.vid video {
     position: sticky;
@@ -83,9 +87,10 @@ body{
     display: none; 
   }
 
-.mainDiv_1, 
+
 .mainDiv_2, 
 .mainDiv_3, 
+.mainDiv_5, 
 .mainDiv_4 {
     box-sizing: border-box;
     padding: 3%;
@@ -137,17 +142,174 @@ button:hover{
     background-color: rgb(0, 255, 225);
     color: rgb(0, 0, 0);
 }
+
+
 .image{
     margin-top: 20px;
     width: 100%;
     height: 100%;
     padding: 5px;
-    border: 1px solid rgb(0, 255, 157);
+    border: 1px solid rgb(0, 255, 255);
     background-color: rgba(0, 255, 255, 0.105);
     border-radius: 100px;
     transition:  0.5s;
 }
-img:hover{
-    transform:scale(0.9);
-    border-radius: 25px;
+
+.my_img > img:hover {
+  transform: scale(0.9);
+  border-radius: 25px;
+  transition: transform 0.3s ease, border-radius 0.3s ease; /* Adding transition for smooth effect */
+}
+.Certificate  > img:hover {
+  transform: scale(0.9);
+  border-radius: 25px;
+  transition: transform 0.3s ease, border-radius 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.image_Certificate{
+  border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    transition:  0.5s;
+}
+
+.Certificate {
+  background-color: rgba(57, 52, 52, 0.692);
+  padding: 3%;
+    width: 80%;
+    height: auto;
+    border: 3px solid rgb(0, 255, 255);
+    box-shadow:1px 1px 10px rgba(255, 255, 255, .5) ;
+    border-radius: 5%;
+    margin-top: 5%;
+}
+
+
+.mainDiv_1{
+margin-top: 10%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .animat_img{
+    border-radius: 100%;
+    width: 50%;
+    height: 50%;
+  }
+
+.animate-size {
+  width: 10px;
+  height: auto;
+  background-color: transparent;
+  animation: sizeChange 5s forwards;
+}
+
+@keyframes sizeChange {
+  0% {
+    font-size: 0.1rem;
+      width: 100px;
+      height: auto;
+  }
+  50% {
+    font-size:150%;
+      width: 100%;
+      height: auto;
+  }75% {
+    font-size:150%;
+    width: 100%;
+      height: auto;
+  }90%{
+    font-size:1px;
+  }
+  100%{
+    
+    margin-top: 0%;
+    font-size: 0rem;
+    display: none;
+  }
+}
+
+/* /////////////// POPUP image///////////// */
+
+.popMain{
+  display:none;
+  top: 0%;
+  margin: 0 ;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.889);
+  width: 100%;
+  height: 100%; 
+}
+.popSpan{
+  margin: 1%;
+  font-size: 60px;
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  border-radius: 100px;
+}
+.popMain .popImage{
+  margin: 0 auto; 
+  display: block;
+  width: 30%;
+  height: auto;
+  border: 2px solid rgb(0, 255, 255);
+  border-radius: 10px;
+}
+
+@media (max-width:720px){
+  .navBar_2{
+    display: block;
+      display: flex;
+      flex-direction: row;
+      top: 0;
+      margin-top: 2px;
+      padding: 3px;
+      gap: 12px;
+      width: 100%;
+      position:fixed;
+      border: 2px solid rgba(231, 238, 232, 0.36);
+      border-radius: 5px;
+      backdrop-filter: blur(5px);
+      justify-content:flex-end;
+  }
+  .navBar{
+    display: none;
+  }
+}
+
+@media (max-width:720px){
+  .navBar_2{
+    display: block;
+      display: flex;
+      flex-direction: row;
+      top: 0;
+      margin-top: 2px;
+      padding: 3px;
+      gap: 12px;
+      width: 100%;
+      position:fixed;
+      border: 2px solid rgba(231, 238, 232, 0.36);
+      border-radius: 5px;
+      backdrop-filter: blur(5px);
+      justify-content:flex-end;
+  }
+  .navBar{
+    display: none;
+  }
+  .mainDiv_5 .Div_2 h1 {
+    font-size: 1rem !important;
+}
+}
+
+@media (max-width:520px){
+.mainDiv_2, 
+.mainDiv_3, 
+.mainDiv_5, 
+.mainDiv_4 {
+  flex-direction: column; 
+}
+  .mainDiv_5 .Div_2 h1 {
+    font-size: 1rem !important;
+}
 }
