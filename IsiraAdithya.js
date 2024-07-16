@@ -1,4 +1,16 @@
-/* background video */
+
+        function function1(){
+            window.location.href = "gallery.html";
+        }
+        function function2(){
+            window.location.href = "sitemap.html";
+        } 
+        function function3(){
+            window.location.href = "Isira_content.html";
+        }
+
+
+        /* background video */
 
 const section = document.querySelector('section.vid');
 const vid = section.querySelector('video');

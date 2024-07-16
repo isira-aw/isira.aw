@@ -57,7 +57,7 @@
 
         </div>
         <div class="Div_2">
-            <img class="image" src="234.jpg"  alt="me">
+            <img class="image" src="isira.jpg"  alt="me">
             <h1>Name : Isira Adithya</h1>
             <h1>Role : Student 4</h1>
             <h1>The following pages were edited dy me!</h1>
@@ -110,6 +110,21 @@
 </div>
 <br><br><br>
 
+<div class="mainDiv_4">
+    <div class="Div_1">
+        <h1 style="font-size: 2.5rem;">Contact Me.</h1>
+        <p align="center">
+            <a href="https://linkedin.com/in/isira weerasinghe" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="isira weerasinghe" height="120" width="120" /></a><br><br>
+            <a href="https://fb.com/isira weerasinghe" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="isira weerasinghe" height="120" width="120" /></a>
+        </p>
+    </div>
+    <div class="Div_2">
+        <h1 style="font-size: 1.5rem;">Phone number: 0710540195</h1>
+        <h1 style="font-size: 1.5rem;">Email address: <br> <a href="mailto:isira.aw@gmail.com">isira.aw@gmail.com </a><br> </h1>
+
+    </div>
+</div>
+
     <h2>Gallery</h2>
     <h4>A Gallery is created using HTML , CSS and JAVASCRIPt. By clicking on the image, you can enlarge font familyes and font color.</h4>
         
@@ -122,54 +137,7 @@
     <h4>A Content page is created using HTML , CSS and JAVASCRIPt. Javascript using to pop-up images .It has a discription of the wind farm. </h4>
 
 </section>
+    <script src="IsiraAdithya.js"></script>
 
-    <script>
-        function function1(){
-            window.location.href = "gallery.html";
-        }
-        function function2(){
-            window.location.href = "sitemap.html";
-        }
-        function function3(){
-            window.location.href = "Isira_content.html";
-        }
-
-
-        /* background video */
-
-const section = document.querySelector('section.vid');
-const vid = section.querySelector('video');
-
-vid.pause();
-
-const scroll = () => {
-    const dis = window.scrollY - section.offsetTop;
-    const total = section.clientHeight - window.innerHeight;
-
-    let per = dis / total;
-    per = Math.max(0, per);
-    per = Math.min(per, 1);
-
-    if (vid.duration > 0) {
-        vid.currentTime = vid.duration * per;
-    }
-};
-
-/* green line */
-
-scroll();
-window.addEventListener('scroll', scroll);
-
-window.addEventListener('scroll', function() {
-    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
-    const clientHeight = document.documentElement.clientHeight;
-    const scrollPercentage = (scrollTop / (scrollHeight - clientHeight)) * 100;
-
-    const progressBar = document.getElementById('progress-bar');
-    progressBar.style.width = scrollPercentage + '%';
-});
-
-    </script>
 </body>
 </html>
