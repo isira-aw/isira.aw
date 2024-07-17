@@ -1,16 +1,21 @@
+// CV URL Section.
 
-        function function1(){
-            window.location.href = "gallery.html";
-        }
+const newCopyButton = document.getElementById('newCopyButton');
+const newCvUrl = "https://drive.usercontent.google.com/u/0/uc?id=1VjQeU4WutuQCVEvP1zvciltBR-nLgfAw&export=download";
+ // WHEN YOU  cope that ural to replace this it try to download first and get that URL there have end  "=download" look like this
+newCopyButton.addEventListener('click', () => {
+    navigator.clipboard.writeText(newCvUrl).then(() => {
+        alert('CV URL copied successfully.\n      URL PASTE YOUR SEARCH ENGINE PLEASE.');
+    });
+});
         function function2(){
-            window.location.href = "sitemap.html";
+            window.location.href = "https://github.com/isira-aw";
         } 
         function function3(){
-            window.location.href = "Isira_content.html";
+            window.location.href = "https://lk.linkedin.com/in/isira-weerasinghe-ba91b027b";
         }
 
-
-        /* background video */
+/* background video */
 
 const section = document.querySelector('section.vid');
 const vid = section.querySelector('video');
