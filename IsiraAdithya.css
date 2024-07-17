@@ -49,7 +49,7 @@ body{
     z-index: -1;
   }
   section.vid{
-   height: 4000px; /*  //////////// If u NEED TO CHANGE TO up */
+   height: 4500px; /*  //////////// If u NEED TO CHANGE TO up */
   }
   section.vid video {
     position: sticky;
