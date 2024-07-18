@@ -49,7 +49,7 @@ body{
     z-index: -1;
   }
   section.vid{
-   height: 4500px; /*  //////////// If u NEED TO CHANGE TO up */
+   height: 5200px; /*  //////////// If u NEED TO CHANGE TO up */
   }
   section.vid video {
     position: sticky;
@@ -109,7 +109,7 @@ body{
 }
 
 .mainDiv_1 > .Div_1,.Div_2{
-    width: 70%;
+    width: 50%;
     /* border: 1px solid rgb(0, 255, 157);
     box-shadow:-1px -1px 10px rgba(255, 255, 255, .5) ; */
     border-radius: 10px;
@@ -184,13 +184,12 @@ button:hover{
     margin-top: 5%;
 }
 
-
 .mainDiv_1{
-margin-top: 10%;
-    width: 50%;
+margin-top: 15%;
+    width: 100%;
     display: flex;
     align-items: center;
-    text-align: center;
+
   }
   .animat_img{
     border-radius: 100%;
@@ -212,11 +211,11 @@ margin-top: 10%;
       height: auto;
   }
   50% {
-    font-size:150%;
+    font-size: 2.5rem;
       width: 100%;
       height: auto;
   }75% {
-    font-size:150%;
+    font-size:2.5rem;
     width: 100%;
       height: auto;
   }90%{
@@ -300,6 +299,40 @@ margin-top: 10%;
   .mainDiv_5 .Div_2 h1 {
     font-size: 1rem !important;
 }
+.image{
+  margin-left: 20px;
+  width: 80%;
+  height: auto;
+  transition:  0.5s;
+}
+.animate-size {
+  animation: sizeChange2 4s forwards;
+}
+
+@keyframes sizeChange2 {
+  0% {
+    font-size: 0.1rem;
+      width: 100px;
+      height: auto;
+  }
+  50% {
+    font-size: 1.2rem;
+      width: 100%;
+      height: auto;
+  }75% {
+    font-size:1.2rem;
+    width: 100%;
+      height: auto;
+  }90%{
+    font-size:1px;
+  }
+  100%{
+    
+    margin-top: 0%;
+    font-size: 0rem;
+    display: none;
+  }
+}
 }
 
 @media (max-width:520px){
@@ -311,5 +344,37 @@ margin-top: 10%;
 }
   .mainDiv_5 .Div_2 h1 {
     font-size: 1rem !important;
+}
+.Certificate {
+  padding: 5%;
+    width: 100%;
+}
+.animate-size {
+  animation: sizeChange2 4s forwards;
+}
+
+@keyframes sizeChange2 {
+  0% {
+    font-size: 0.1rem;
+      width: 100px;
+      height: auto;
+  }
+  50% {
+    font-size: 1.2rem;
+      width: 100%;
+      height: auto;
+  }75% {
+    font-size:1.2rem;
+    width: 100%;
+      height: auto;
+  }90%{
+    font-size:1px;
+  }
+  100%{
+    
+    margin-top: 0%;
+    font-size: 0rem;
+    display: none;
+  }
 }
 }
