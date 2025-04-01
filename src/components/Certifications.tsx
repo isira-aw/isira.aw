@@ -73,7 +73,7 @@ export default function Certifications() {
               <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
               <p className="text-gray-600 mb-2">{cert.platform}</p>
               <p className="text-gray-500 text-sm mb-4">{cert.date}</p>
-              <motion.a
+              {/* <motion.a
                 href={cert.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -82,7 +82,7 @@ export default function Certifications() {
               >
                 <ExternalLink className="w-4 h-4 mr-2" />
                 View Certificate
-              </motion.a>
+              </motion.a> */}
             </motion.div>
           ))}
         </div>
