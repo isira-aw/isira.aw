@@ -27,7 +27,7 @@ export default function Hero() {
             Hi 👋, I'm Isira Adithya Weerasinghe
           </motion.h1>
           <br />
-          <div className="flex justify-center space-x-4  gap-8">
+          <div className="flex justify-center space-x-4  ">
   <motion.a
     href="https://github.com/isira-aw"
     target="_blank"
@@ -45,6 +45,7 @@ export default function Hero() {
     <Linkedin className="w-6 h-6 text-gray-600 hover:text-purple-600" />
   </motion.a>
 </div>
+
 <br /><br />
 
           <motion.p
