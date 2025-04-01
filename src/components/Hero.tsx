@@ -26,7 +26,7 @@ export default function Hero() {
           >
             Hi 👋, I'm Isira Adithya Weerasinghe
           </motion.h1>
-          <div className="flex justify-center items-center min-h-screen space-x-6">
+          <div className="flex justify-center items-center">
       <motion.a
         href="https://github.com/isira-aw"
         target="_blank"
