@@ -26,24 +26,24 @@ export default function Hero() {
           >
             Hi 👋, I'm Isira Adithya Weerasinghe
           </motion.h1>
-          <div className="flex justify-center items-center">
-      <motion.a
-        href="https://github.com/isira-aw"
-        target="_blank"
-        rel="noopener noreferrer"
-        whileHover={{ scale: 1.2 }}
-      >
-        <Github className="w-12 h-12 text-black hover:text-blue-600 transition-all duration-300" />
-      </motion.a>
-      <motion.a
-        href="https://www.linkedin.com/in/isira-weerasinghe-ba91b027b/"
-        target="_blank"
-        rel="noopener noreferrer"
-        whileHover={{ scale: 1.2 }}
-      >
-        <Linkedin className="w-12 h-12 text-blue-500 hover:text-purple-600 transition-all duration-300" />
-      </motion.a>
-    </div>
+          <div className="flex justify-center space-x-4">
+  <motion.a
+    href="https://github.com/isira-aw"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.2 }}
+  >
+    <Github className="w-6 h-6 text-gray-600 hover:text-purple-600" />
+  </motion.a>
+  <motion.a
+    href="https://www.linkedin.com/in/isira-weerasinghe-ba91b027b/"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.2 }}
+  >
+    <Linkedin className="w-6 h-6 text-gray-600 hover:text-purple-600" />
+  </motion.a>
+</div>
           <motion.p
             className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
