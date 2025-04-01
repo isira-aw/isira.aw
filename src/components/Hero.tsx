@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Github, Linkedin, Mail, Menu, X } from 'lucide-react';
 import { Code2, BookOpen, Camera, Brain } from 'lucide-react';
 
 export default function Hero() {
@@ -25,6 +26,22 @@ export default function Hero() {
           >
             Hi 👋, I'm Isira Adithya Weerasinghe
           </motion.h1>
+          <motion.a
+                href="https://github.com/isira-aw"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+              >
+                <Github className="w-6 h-6 text-gray-600 hover:text-purple-600" />
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/isira-weerasinghe-ba91b027b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+              >
+                <Linkedin className="w-6 h-6 text-gray-600 hover:text-purple-600" />
+              </motion.a>
           <motion.p
             className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0 }}
