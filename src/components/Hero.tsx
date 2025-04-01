@@ -73,18 +73,6 @@ export default function Hero() {
             <h3 className="text-xl font-semibold mb-2">Student</h3>
             <p className="text-gray-600">BSc (Hons) Computer Science at IIT</p>
           </motion.div>
-
-          {/* <motion.div
-            className="bg-white p-8 rounded-xl shadow-lg"
-            whileHover={{ scale: 1.05 }}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.8 }}
-          >
-            <Camera className="w-12 h-12 text-red-600 mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Explorer</h3>
-            <p className="text-gray-600">Always eager to learn and explore new technologies</p>
-          </motion.div> */}
         </div>
       </div>
     </section>

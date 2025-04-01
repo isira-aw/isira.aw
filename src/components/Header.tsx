@@ -109,14 +109,7 @@ export default function Header() {
             >
               Projects
             </motion.a>
-            <motion.a 
-              href="#gallery"
-              className="text-gray-600 hover:text-purple-600 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Gallery
-            </motion.a>
+          
             <motion.a 
               href="#certifications"
               className="text-gray-600 hover:text-purple-600 transition-colors"
