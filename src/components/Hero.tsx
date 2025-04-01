@@ -26,7 +26,7 @@ export default function Hero() {
           >
             Hi 👋, I'm Isira Adithya Weerasinghe
           </motion.h1>
-          <div className="flex justify-center space-x-4">
+          <div className="flex justify-center items-center space-x-6 py-4 gap-8">
   <motion.a
     href="https://github.com/isira-aw"
     target="_blank"
@@ -56,7 +56,7 @@ export default function Hero() {
           </motion.p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex justify-center space-x-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <motion.div
             className="bg-white p-8 rounded-xl shadow-lg"
             whileHover={{ scale: 1.05 }}
