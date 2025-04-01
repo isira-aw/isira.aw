@@ -34,7 +34,7 @@ export default function Hero() {
     rel="noopener noreferrer"
     whileHover={{ scale: 1.2 }}
   >
-    <Github className="w-6 h-6 text-gray-600 hover:text-purple-600" />
+    <Github className="w-10 h-10 text-gray-600 hover:text-purple-600" />
   </motion.a>
   <motion.a
     href="https://www.linkedin.com/in/isira-weerasinghe-ba91b027b/"
@@ -42,7 +42,7 @@ export default function Hero() {
     rel="noopener noreferrer"
     whileHover={{ scale: 1.2 }}
   >
-    <Linkedin className="w-6 h-6 text-gray-600 hover:text-purple-600" />
+    <Linkedin className="w-10 h-10 text-gray-600 hover:text-purple-600" />
   </motion.a>
 </div>
 
